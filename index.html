@@ -2,13 +2,457 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>W3 Tutorials</title>
+<title>W3 Tutorials Practice</title>
 </head>
 
 <body>
+	<h1><a href="https://www.w3schools.com/html/default.asp">W3 Schools Tutorials Practice Page</a></h1>
 	
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
+	<br>
+	
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+	<br>
+	
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+	<br>
+	
+<a href="https://www.w3schools.com">This is a link</a>
+	<br>
+	<br>
+	
+<img src="/images/w3schools.jpeg" alt="W3Schools.com" width="104" height="142">
+	<br>
+	
+<p>This is a <br> paragraph with a line break.</p>
+	<br>
+	<hr>
+	<hr>
+	
+<h1>HTML Attributes</h1>
+	<p>• All HTML elements can have attributes<br>
+• Attributes provide additional information about elements<br>
+• Attributes are always specified in the start tag<br>
+• Attributes usually come in name/value pairs like: name="value"</p>
+	
+<h1>The href Attribute</h1>
+<p>The "a" tag defines a hyperlink. The "href" attribute specifies the URL of the page the link goes to:</p>
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+	<hr>
+	
+<h1>The src Attribute</h1>
+	<p>The "img" tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</p>
+	<img src="images/img_girl.jpeg">
+	<hr>
+	
+<h1>The width and height Attributes</h1>
+	<p>The "img" tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):</p>
+	<img src="/images/img_girl.jpeg" width="300" height="400">
+	<hr>
+	
+<h1>The alt Attribute</h1>
+	<p>The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.</p>
+	<img src="/images/img_girl.jpeg" alt="Girl with a jacket">
+	<hr>
+	<p>See what happens if we try to display an image that does not exist:</p>
+	<img src="img_typo.jpg" alt="Girl with a jacket">
+	<hr>
+	
+<h1>The style Attribute</h1>
+	<p>The style attribute is used to add styles to an element, such as color, font, size, and more.</p>
+	<p style="color:red;">This is a red paragraph.</p>
+	<hr>
+	
+<h1>The lang Attribute</h1>
+	<p>You should always include the lang attribute inside the "html" tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+		<br>
+		<! --The following example specifies English as the language: html lang="en"-->
+	
+<h1>The title Attribute</h1>
+	<p>The title attribute defines some extra information about an element.
+		<br>
+		The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+	<p title="I'm a tooltip">This is a paragraph.</p>
+	<hr>
+	
+<h1>We Suggest: Always Use Lowercase Attributes</h1>
+	<p>The HTML standard does not require lowercase attribute names.
+		<br>The title attribute (and all other attributes) can be written with uppercase or lowercase like title or TITLE.
+		<br>However, W3C recommends lowercase attributes in HTML, and demands lowercase attributes for stricter document types like XHTML.
+	</p>
+	<hr>
+	
+<h1>We Suggest: Always Quote Attribute Values</h1>
+	<p>The HTML standard does not require quotes around attribute values.
+		<br>However, W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.</p>
+	<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+	<br>
+	<h1>About W3Schools</h1>
+
+<p title=About W3Schools>
+You cannot omit quotes around an attribute value 
+if the value contains spaces.
+</p>
+
+<p><b>
+If you move the mouse over the paragraph above,
+your browser will only display the first word from the title.
+</b></p>
+	<hr>
+	
+<h1>Single or Double Quotes?</h1>
+	<p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+		<br>
+		In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+	<p>Move your mouse over the paragraphs below to see the effect:</p>
+
+	<p title='John "ShotGun" Nelson'>John with double quotes</p>
+	<p title="John 'ShotGun' Nelson">John with single quotes</p>
+	<hr>
+	
+<h1>Chapter Summary</h1>
+	<ul>
+	<li>All HTML elements can have <b>attributes</b></li>
+	<li>The <b>href</b> attribute of <b>"a"</b> specifies the URL of the page the link goes to</li>
+	<li>The <b>src</b> attribute of <b>"img"</b> specifies the path to the image to be displayed</li>
+	<li>The <b>width</b> and <b>height</b> attributes of <b>"img"</b> provide size information for images</li>
+	<li>The <b>alt</b> attribute of <b>"img"</b> provides an alternate text for an image</li>
+	<li>The <b>style</b> attribute is used to add styles to an element, such as color, font, size, and more</li>
+	<li>The <b>lang</b> attribute of the <b>"html"</b> tag declares the language of the Web page</li>
+	<li>The <b>title</b> attribute defines some extra information about an element</li>
+	</ul>
+	<hr>
+	<hr>
+	
+
+<h1>HTML Headings</h1>
+	<p>Search engines use the headings to index the structure and content of your web pages.<br>
+<br>
+	Users often skim a page by its headings. It is important to use headings to show the document structure.</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+	
+<h1>Bigger Headings</h1>
+<p>Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property. See example below:</p>
+	<h1 style="font-size:60px;">This is Heading 1 with an inline style attribute of font-size:60px applied in the code.</h1>
+	<hr>
+	<hr>
+
+<h1>HTML Paragraphs</h1>
+	<p>The HTML "p" element defines a paragraph.<br>
+	A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+	</p>
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+	
+<h1>HTML Display</h1>
+	<p>You cannot be sure how HTML will be displayed.<br>
+	Large or small screens, and resized windows will create different results.<br>
+	With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.<br>
+	The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</p>
+	
+<h1>HTML Horizontal Rules</h1>
+	<p>The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.<br>
+	The "hr" element is used to separate content (or define a change) in an HTML page:</p>
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+	
+<h1>HTML Line Breaks</h1>
+	<p>The HTML "br" element defines a line break.<br>
+	Use "br" if you want a line break (a new line) without starting a new paragraph:</p>
+	<p>This is<br>a paragraph<br>with line breaks.</p>
+	
+<h1>The Poem Problem</h1>
+	<p>This poem will display on a single line:</p>
+	<p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</p>
+	
+<h1>Solution - The HTML "pre" Element</h1>
+	<p>The HTML "pre" element defines preformatted text.<br>
+	The text inside a "pre" element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
+	<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+	<hr>
+	<hr>
+	
+<h1>HTML Styles</h1>
+	<p>The HTML style attribute is used to add styles to an element, such as color, font, size, and more.</p>
+	<p>I am normal</p>
+	<p style="color:red;">I am red</p>
+	<p style="color:blue;">I am blue</p>
+	<p style="font-size:50px;">I am big (font size 50px)</p>
+	<br>
+	
+<h1>The HTML Style Attribute</h1>
+	<p>Setting the style of an HTML element, can be done with the style attribute.<br>
+	The HTML style attribute has the following syntax:</p>
+	<p>&lt;tagname style="property:value;"&gt;<br><br>
+		The property is a CSS property. The value is a CSS value.</p>
+	
+<h1>Background Color</h1>
+	<p>The CSS background-color property defines the background color for an HTML element.</p>
+	<body style="background-color:powderblue;">
+
+	<h3>This is a h3 heading</h3>
+	<p>This is a paragraph.</p>
+		
+	<body>
+	<h1 style="background-color:green;">This is a green background heading</h1>
+	<p style="background-color:orange;">This is a orange background paragraph.</p>
+	</body>
+
+</body>
+	
+<h1>Text Color</h1>
+	<p>The CSS color property defines the text color for an HTML element:</p>
+	<h3 style="color:blue;">This is a blue h3 heading stlye</h3>
+	<p style="color:red;">This is a red paragraph style.</p>
+	
+<h1>Fonts</h1>
+	<p>The CSS font-family property defines the font to be used for an HTML element:</p>
+	<h3 style="font-family:verdana;">This is a h3 verdana font heading</h3>
+	<p style="font-family:courier;">This is a courier font paragraph.</p>
+	
+<h1>Text Size</h1>
+	<p>The CSS font-size property defines the text size for an HTML element:</p>
+	<h1 style="font-size:300%;">This is a 300% font size heading</h1>
+	<p style="font-size:160%;">This is a 160% font size paragraph.</p>
+	
+<h1>Text Alignment</h1>
+	<p>The CSS text-align property defines the horizontal text alignment for an HTML element:</p>
+	<h1 style="text-align:center;">Centered Heading</h1>
+	<p style="text-align:center;">Centered paragraph.</p>
+	
+<h1>Chapter Summary</h1>
+	<pre>
+	• Use the style attribute for styling HTML elements
+	• Use background-color for background color
+	• Use color for text colors
+	• Use font-family for text fonts
+	• Use font-size for text sizes
+	• Use text-align for text alignment</pre>
+	<hr>
+	<hr>
+	
+<h1>HTML Text Formatting</h1>
+	<p>HTML contains several elements for defining text with a special meaning. See example below:</p>
+	<p><b>This text is bold</b></p>
+	<p><i>This text is italic</i></p>
+	<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+	
+<h1>HTML Formatting Elements</h1>
+	<p>Formatting elements were designed to display special types of text:</p>
+	<pre>
+	&lt;b&gt; - Bold text
+	&lt;strong&gt; - Important text
+	&lt;i&gt; - Italic text
+	&lt;em&gt; - Emphasized text
+	&lt;mark&gt; - Marked text
+	&lt;small&gt; - Smaller text
+	&lt;del&gt; - Deleted text
+	&lt;ins&gt; - Inserted text
+	&lt;sub&gt; - Subscript text
+	&lt;sup&gt; - Superscript text</pre>
+	
+<h1>HTML &lt;b&gt; and &lt;strong&gt; Elements</h1>
+	<p>The HTML "b" element defines bold text, without any extra importance.</p>
+	<b>This text is bold</b>
+	<p>The HTML "strong" element defines text with strong importance. The content inside is typically displayed in bold.</p>
+	<strong>This text is important!</strong>
+	
+<h1>HTML &lt;i&gt; and &lt;em&gt; Elements</h1>
+	<p>The HTML "i" element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+		<br>Tip: The "i" tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</p>
+	<i>This text is italic</i>
+	<br>
+	<p>The HTML "em" element defines emphasized text. The content inside is typically displayed in italic.
+		<br>
+		Tip: A screen reader will pronounce the words in "em" with an emphasis, using verbal stress.</p>
+	<em>This text is emphasized</em>
+	
+<h1>HTML &lt;small&gt; Element</h1>
+	<p>The HTML "small" element defines smaller text:</p>
+	<small>This is some smaller text.</small>
+	
+<h1>HTML &lt;mark&gt; Element</h1>
+	<p>The HTML "mark" element defines text that should be marked or highlighted:</p>
+	<p>Do not forget to buy <mark>milk</mark> today.</p>
+	
+<h1>HTML &lt;del&gt; Element</h1>
+	<p>The HTML "del" element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:</p>
+	<p>My favorite color is <del>blue</del> red.</p>
+	
+<h1>HTML &lt;ins&gt; Element</h1>
+	<p>The HTML "ins" element defines a text that has been inserted into a document. Browsers will usually underline inserted text:</p>
+	<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+	
+<h1>HTML &lt;sub&gt; Element</h1>
+	<p>The HTML "sub" element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:</p>
+	<p>This is <sub>subscripted</sub> text.</p>
+	
+<h1>HTML &lt;sup&gt; Element</h1>
+	<p>The HTML "sup" element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:</p>
+	<p>This is <sup>superscripted</sup> text.</p>
+	
+<h1>HTML Text Formatting Elements</h1>
+	<pre>
+TAG		DESCRIPTION
+• &lt;b&gt;		Defines bold text
+• &lt;em&gt;		Defines emphasized text 
+• &lt;i&gt;		Defines a part of text in an alternate voice or mood
+• &lt;small&gt;	Defines smaller text
+• &lt;strong&gt;	Defines important text
+• &lt;sub&gt;		Defines subscripted text
+• &lt;sup&gt;		Defines superscripted text
+• &lt;ins&gt;		Defines inserted text
+• &lt;del&gt;		Defines deleted text
+• &lt;mark&gt;	Defines marked/highlighted text</pre>
+	<hr>
+	<hr>
+	
+<h1>HTML Quotation and Citation Elements</h1>
+	<p>In this chapter we will go through the  &lt;blockquote&gt;, &lt;q&gt;,  &lt;abbr&gt;,  &lt;address&gt;,  &lt;cite&gt;, and  &lt;bdo&gt; HTML elements.</p>
+	<p>Here is a quote from WWF's website:</p>
+
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">
+	For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+	</blockquote>
+	
+<h1>HTML &lt;blockquote&gt; for Quotations</h1>
+	<p>The HTML &lt;blockquote&gt; element defines a section that is quoted from another source.
+		<br>Browsers usually indent &lt;blockquote&gt; elements.</p>
+	<p>Here is a quote from WWF's website:</p>
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">
+	For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+	</blockquote>
+	
+<h1>HTML &lt;q&gt; for Short Quotations</h1>
+	<p>The HTML &lt;q&gt; tag defines a short quotation.
+		<br>Browsers normally insert quotation marks around the quotation.</p>
+	<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+	
+<h1>HTML &lt;abbr&gt; for Abbreviations</h1>
+	<p>The HTML &lt;abbr&gt; tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+		<br>Marking abbreviations can give useful information to browsers, translation systems, and search-engines.
+		<br>Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. </p>
+	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+	
+<h1>HTML &lt;address&gt; for Contact Information</h1>
+	<p>The HTML &lt;address&gt; tag defines the contact information for the author/owner of a document or an article.
+	<br>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.<br>
+	<br>The text in the &lt;address&gt; element usually renders in italic, and browsers will always add a line break before and after the &lt;address&gt; element.</p>
+	<address>
+	Written by John Doe.<br>
+	Visit us at:<br>
+	Example.com<br>
+	Box 564, Disneyland<br>
+	USA
+	</address>
+	<br>
+	
+<h1>HTML &lt;cite&gt; for Work Title</h1>
+	<p>The HTML &lt;cite&gt; tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+		<br>Note: A person's name is not the title of a work.
+		<br>The text in the &lt;cite&gt; element usually renders in italic.</p>
+	<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+	
+<h1>HTML &lt;bdo&gt; for Bi-Directional Override</h1>
+	<p>BDO stands for Bi-Directional Override.
+		<br>The HTML &lt;bdo&gt; tag is used to override the current text direction:</p>
+	<bdo dir="rtl">This text will be written from right to left</bdo>
+
+<h1>HTML Quotation and Citation Elements</h1>
+	<pre>
+	TAG		DESCRIPTION
+	• &lt;abbr&gt;	Defines an abbreviation or acronym
+	• &lt;address&gt;	Defines contact information for the author/owner of a document
+	• &lt;bdo&gt;		Defines the text direction
+	• &lt;blockquote&gt;	Defines a section that is quoted from another source
+	• &lt;cite&gt;	Defines the title of a work
+	• &lt;q&gt;		Defines a short inline quotation
+</pre>	
+	<hr>
+	<hr>
+	
+<h1>HTML Comments</h1>
+	<p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+	
+<h1>HTML Comment Tag</h1>
+	<p>You can add comments to your HTML source by using the following syntax:<br>
+	&lt;!-- Write your comments here --&gt;<br>
+	Notice that there is an exclamation point (!) in the start tag, but not in the end tag.<br>
+	Note: Comments are not displayed by the browser, but they can help document your HTML source code.</p>
+	
+<h1>Add Comments</h1>
+	<p>With comments you can place notifications and reminders in your HTML code:</p>
+	<!-- This is a comment -->
+
+	<p>This is a paragraph.What cannot be seen is a comment saying "Remeber to add more information her."</p>
+
+	<!-- Remember to add more information here -->
+	
+<h1>Hide Content</h1>
+	<p>Comments can be used to hide content.<br>
+		This can be helpful if you hide content temporarily:</p>
+	<p>This is a paragraph.</p>
+
+	<!-- <p>This is another paragraph </p> -->
+
+	<p>This is a paragraph too.?<br>
+	You can also hide more than one line. Everything between the &lt;!-- and the --&gt; will be hidden from the display.</p>
+	<p>This is a paragraph. (The next sentence is hidden between the &lt;!-- and the --&gt;) </p>
+	<!--
+	<p>Look at this cool image:</p>
+	<img border="0" src="pic_trulli.jpg" alt="Trulli">
+	-->
+	<p>This is a paragraph too.</p>
+	
+<h1>Hide Inline Content</h1>
+	<p>Comments can be used to hide parts in the middle of the HTML code.</p>
+	<p>This <!-- great text --> is a paragraph.</p>
+	
 	
 </body>
 </html>
