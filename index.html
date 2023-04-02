@@ -4,23 +4,24 @@
 <meta charset="UTF-8">
 <title>W3 Tutorials Practice</title>
 </head>
-
 <body>
 	<h1><a href="https://www.w3schools.com/html/default.asp">W3 Schools Tutorials Practice Page</a></h1>
 	
+<h1 style="color:teal;">What is HTML?</h1>
+	<pre>
+• HTML stands for Hyper Text Markup Language
+• HTML is the standard markup language for creating Web pages
+• HTML describes the structure of a Web page
+• HTML consists of a series of elements
+• HTML elements tell the browser how to display the content
+• HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</pre>
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
-	<br>
-	
 <h1>This is heading 1</h1>
 <h2>This is heading 2</h2>
 <h3>This is heading 3</h3>
-	<br>
-	
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
-	<br>
-	
 <a href="https://www.w3schools.com">This is a link</a>
 	<br>
 	<br>
@@ -33,65 +34,104 @@
 	<hr>
 	<hr>
 	
-<h1>HTML Attributes</h1>
+<h1 style="color:teal;">HTML Elements</h1>
+<p>An HTML element is defined by a start tag, some content, and an end tag.<br>
+	&lt;tagname&gt;Content goes here...&lt;/tagname&gt;<br><br>
+<b>Note:</b> Some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+	<br>
+	
+<h2>Nested HTML Elements</h2>
+<p>HTML elements can be nested (this means that elements can contain other elements). <br>
+	  All HTML documents consist of nested HTML elements. <br>
+	  The following example contains four HTML elements (&lt;html&gt;, &lt;body&gt; , &lt;h1&gt;  and &lt;p&gt; ):</p>
+<p>&lt;!DOCTYPE html&gt;&nbsp;<br>
+	&lt;html&gt;<br>
+&nbsp;&lt;body&gt;</p>
+<p>&nbsp;&lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+&nbsp;&lt;p&gt;My first paragraph.&lt;/p&gt;&nbsp;</p>
+<p>&lt;/body&gt;&nbsp;<br>
+	&lt;/html&gt;&nbsp;</p>
+<p>The body is nested inside the html tag and the h1 and p tags are nested inside the body tag.</p>
+	
+<h2><br>
+Empty HTML Elements</h2>
+<p>HTML elements with no content are called empty elements.&nbsp;</p>
+<p>The &lt;br&gt; tag defines a line break, and is an empty element without a closing tag:&nbsp;</p>
+	<br>
+	
+<h2>HTML is Not Case Sensitive&nbsp;</h2>
+<p>HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.&nbsp;</p>
+<p>The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.&nbsp;</p>
+<br>
+	
+<h2>HTML Tag Reference</h2>
+<p>Tag Descriptio:</p>
+<p>&lt;html&gt; Defines the root of an HTML document&nbsp;</p>
+<p>&lt;body&gt; Defines the document's body&nbsp;</p>
+	<p>&lt;h1&gt; to &lt;h6&gt; Defines HTML headings&nbsp;</p>
+	<br>
+	<hr><hr>
+	
+<h1 style="color:teal;">HTML Attributes</h1>
 	<p>• All HTML elements can have attributes<br>
 • Attributes provide additional information about elements<br>
 • Attributes are always specified in the start tag<br>
 • Attributes usually come in name/value pairs like: name="value"</p>
 	
-<h1>The href Attribute</h1>
+<h2><br>
+The href Attribute</h2>
 <p>The "a" tag defines a hyperlink. The "href" attribute specifies the URL of the page the link goes to:</p>
-<a href="https://www.w3schools.com">Visit W3Schools</a>
-	<hr>
-	
-<h1>The src Attribute</h1>
+<a href="https://www.w3schools.com">Visit W3Schools</a><br>
+<br>
+<br>
+<h2>The src Attribute</h2>
 	<p>The "img" tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</p>
-	<img src="images/img_girl.jpeg">
+	<img src="images/img_girl.jpeg" alt="Girl with a jacket">
 	<hr>
 	
-<h1>The width and height Attributes</h1>
+<h2>The width and height Attributes</h2>
 	<p>The "img" tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):</p>
-	<img src="/images/img_girl.jpeg" width="300" height="400">
+	<img src="/images/img_girl.jpeg" width="300" height="400" alt="Girl with a jacket">
 	<hr>
 	
-<h1>The alt Attribute</h1>
+<h2>The alt Attribute</h2>
 	<p>The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.</p>
 	<img src="/images/img_girl.jpeg" alt="Girl with a jacket">
 	<hr>
 	<p>See what happens if we try to display an image that does not exist:</p>
-	<img src="img_typo.jpg" alt="Girl with a jacket">
-	<hr>
-	
-<h1>The style Attribute</h1>
+	<img src="img_typo.jpg" alt="Girl with a jacket"><br>
+	<br>
+	<br>
+<h2>The style Attribute</h2>
 	<p>The style attribute is used to add styles to an element, such as color, font, size, and more.</p>
-	<p style="color:red;">This is a red paragraph.</p>
-	<hr>
-	
-<h1>The lang Attribute</h1>
+	<p style="color:red;">This is a red paragraph.<br>
+	  <br>
+	</p>
+<h2>The lang Attribute</h2>
 	<p>You should always include the lang attribute inside the "html" tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
 		<br>
 		<! --The following example specifies English as the language: html lang="en"-->
 	
-<h1>The title Attribute</h1>
+<h2>The title Attribute</h2>
 	<p>The title attribute defines some extra information about an element.
 		<br>
 		The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
-	<p title="I'm a tooltip">This is a paragraph.</p>
-	<hr>
-	
-<h1>We Suggest: Always Use Lowercase Attributes</h1>
+	<p title="I'm a tooltip">This is a paragraph.<br>
+	  <br>
+	</p>
+<h2>We Suggest: Always Use Lowercase Attributes</h2>
 	<p>The HTML standard does not require lowercase attribute names.
 		<br>The title attribute (and all other attributes) can be written with uppercase or lowercase like title or TITLE.
 		<br>However, W3C recommends lowercase attributes in HTML, and demands lowercase attributes for stricter document types like XHTML.
-	</p>
-	<hr>
-	
-<h1>We Suggest: Always Quote Attribute Values</h1>
+        <br>
+        <br>
+</p>
+<h2>We Suggest: Always Quote Attribute Values</h2>
 	<p>The HTML standard does not require quotes around attribute values.
 		<br>However, W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.</p>
 	<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
 	<br>
-	<h1>About W3Schools</h1>
+	<h2>About W3Schools</h2>
 
 <p title=About W3Schools>
 You cannot omit quotes around an attribute value 
@@ -101,20 +141,20 @@ if the value contains spaces.
 <p><b>
 If you move the mouse over the paragraph above,
 your browser will only display the first word from the title.
-</b></p>
-	<hr>
-	
-<h1>Single or Double Quotes?</h1>
+</b><br>
+<br>
+</p>
+<h2>Single or Double Quotes?</h2>
 	<p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
 		<br>
 		In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
 	<p>Move your mouse over the paragraphs below to see the effect:</p>
 
 	<p title='John "ShotGun" Nelson'>John with double quotes</p>
-	<p title="John 'ShotGun' Nelson">John with single quotes</p>
-	<hr>
-	
-<h1>Chapter Summary</h1>
+	<p title="John 'ShotGun' Nelson">John with single quotes<br>
+	  <br>
+	</p>
+<h2>Chapter Summary</h2>
 	<ul>
 	<li>All HTML elements can have <b>attributes</b></li>
 	<li>The <b>href</b> attribute of <b>"a"</b> specifies the URL of the page the link goes to</li>
@@ -123,13 +163,15 @@ your browser will only display the first word from the title.
 	<li>The <b>alt</b> attribute of <b>"img"</b> provides an alternate text for an image</li>
 	<li>The <b>style</b> attribute is used to add styles to an element, such as color, font, size, and more</li>
 	<li>The <b>lang</b> attribute of the <b>"html"</b> tag declares the language of the Web page</li>
-	<li>The <b>title</b> attribute defines some extra information about an element</li>
+	<li>The <b>title</b> attribute defines some extra information about an element<br>
+	  <br>
+	</li>
 	</ul>
 	<hr>
 	<hr>
 	
 
-<h1>HTML Headings</h1>
+<h1 style="color:teal;">HTML Headings</h1>
 	<p>Search engines use the headings to index the structure and content of your web pages.<br>
 <br>
 	Users often skim a page by its headings. It is important to use headings to show the document structure.</p>
@@ -151,9 +193,11 @@ your browser will only display the first word from the title.
 	A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
 	</p>
 	<p>This is a paragraph.</p>
-	<p>This is another paragraph.</p>
+	<p>This is another paragraph.<br>
+	  <br>
+	</p>
 	
-<h1>HTML Display</h1>
+<h2>HTML Display</h2>
 	<p>You cannot be sure how HTML will be displayed.<br>
 	Large or small screens, and resized windows will create different results.<br>
 	With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.<br>
@@ -172,24 +216,29 @@ contains         a lot of spaces
 in the source         code,
 but the        browser
 ignores it.
+  <br>
+  <br>
 </p>
 	
-<h1>HTML Horizontal Rules</h1>
+<h2>HTML Horizontal Rules</h2>
 	<p>The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.<br>
 	The "hr" element is used to separate content (or define a change) in an HTML page:</p>
 <h1>This is heading 1</h1>
-<p>This is some text.</p>
-<hr>
+<p>This is some text.<br>
+  <br>
+</p>
 <h2>This is heading 2</h2>
-<p>This is some other text.</p>
-<hr>
-	
-<h1>HTML Line Breaks</h1>
+<p>This is some other text.<br>
+  <br>
+</p>
+<h2>HTML Line Breaks</h2>
 	<p>The HTML "br" element defines a line break.<br>
 	Use "br" if you want a line break (a new line) without starting a new paragraph:</p>
-	<p>This is<br>a paragraph<br>with line breaks.</p>
+	<p>This is<br>a paragraph<br>with line breaks.<br>
+	  <br>
+	</p>
 	
-<h1>The Poem Problem</h1>
+<h2>The Poem Problem</h2>
 	<p>This poem will display on a single line:</p>
 	<p>
   My Bonnie lies over the ocean.
@@ -199,9 +248,11 @@ ignores it.
   My Bonnie lies over the ocean.
 
   Oh, bring back my Bonnie to me.
+    <br>
+    <br>
 </p>
 	
-<h1>Solution - The HTML "pre" Element</h1>
+<h2>Solution - The HTML "pre" Element</h2>
 	<p>The HTML "pre" element defines preformatted text.<br>
 	The text inside a "pre" element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
 	<pre>
@@ -213,58 +264,59 @@ ignores it.
 
   Oh, bring back my Bonnie to me.
 </pre>
-	<hr>
+	<br>
+<hr>
 	<hr>
 	
-<h1>HTML Styles</h1>
+<h1 style="color:teal;">HTML Styles</h1>
 	<p>The HTML style attribute is used to add styles to an element, such as color, font, size, and more.</p>
 	<p>I am normal</p>
 	<p style="color:red;">I am red</p>
 	<p style="color:blue;">I am blue</p>
 	<p style="font-size:50px;">I am big (font size 50px)</p>
-	<br>
 	
-<h1>The HTML Style Attribute</h1>
+<h2>The HTML Style Attribute</h2>
 	<p>Setting the style of an HTML element, can be done with the style attribute.<br>
 	The HTML style attribute has the following syntax:</p>
 	<p>&lt;tagname style="property:value;"&gt;<br><br>
 		The property is a CSS property. The value is a CSS value.</p>
+<br>
 	
-<h1>Background Color</h1>
+<h2>Background Color</h2>
 	<p>The CSS background-color property defines the background color for an HTML element.</p>
-	<body style="background-color:powderblue;">
-
-	<h3>This is a h3 heading</h3>
+	<body style="background-color:lightgrey;">
+<h3>This is a h3 heading</h3>
 	<p>This is a paragraph.</p>
-		
-	<body>
-	<h1 style="background-color:green;">This is a green background heading</h1>
-	<p style="background-color:orange;">This is a orange background paragraph.</p>
-	</body>
 
-</body>
+	<h2 style="background-color:green;">This is a green background heading</h2>
+	<p style="background-color:orange;">This is a orange background paragraph.</p>
+	<br>
 	
-<h1>Text Color</h1>
+<h2>Text Color</h2>
 	<p>The CSS color property defines the text color for an HTML element:</p>
 	<h3 style="color:blue;">This is a blue h3 heading stlye</h3>
 	<p style="color:red;">This is a red paragraph style.</p>
+	<br>
 	
-<h1>Fonts</h1>
+<h2>Fonts</h2>
 	<p>The CSS font-family property defines the font to be used for an HTML element:</p>
 	<h3 style="font-family:verdana;">This is a h3 verdana font heading</h3>
 	<p style="font-family:courier;">This is a courier font paragraph.</p>
+	<br>
 	
-<h1>Text Size</h1>
+<h2>Text Size</h2>
 	<p>The CSS font-size property defines the text size for an HTML element:</p>
 	<h1 style="font-size:300%;">This is a 300% font size heading</h1>
 	<p style="font-size:160%;">This is a 160% font size paragraph.</p>
+	<br>
 	
-<h1>Text Alignment</h1>
+<h2>Text Alignment</h2>
 	<p>The CSS text-align property defines the horizontal text alignment for an HTML element:</p>
 	<h1 style="text-align:center;">Centered Heading</h1>
 	<p style="text-align:center;">Centered paragraph.</p>
+	<br>
 	
-<h1>Chapter Summary</h1>
+<h2>Chapter Summary</h2>
 	<pre>
 	• Use the style attribute for styling HTML elements
 	• Use background-color for background color
@@ -272,17 +324,18 @@ ignores it.
 	• Use font-family for text fonts
 	• Use font-size for text sizes
 	• Use text-align for text alignment</pre>
+	<br>
 	<hr>
 	<hr>
 	
-<h1>HTML Text Formatting</h1>
+<h1 style="color:teal;">HTML Text Formatting</h1>
 	<p>HTML contains several elements for defining text with a special meaning. See example below:</p>
 	<p><b>This text is bold</b></p>
 	<p><i>This text is italic</i></p>
 	<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
-
-	
-<h1>HTML Formatting Elements</h1>
+	<br>
+		
+<h2>HTML Formatting Elements</h2>
 	<p>Formatting elements were designed to display special types of text:</p>
 	<pre>
 	&lt;b&gt; - Bold text
@@ -295,48 +348,59 @@ ignores it.
 	&lt;ins&gt; - Inserted text
 	&lt;sub&gt; - Subscript text
 	&lt;sup&gt; - Superscript text</pre>
-	
-<h1>HTML &lt;b&gt; and &lt;strong&gt; Elements</h1>
+	<br>
+		
+<h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
 	<p>The HTML "b" element defines bold text, without any extra importance.</p>
 	<b>This text is bold</b>
-	<p>The HTML "strong" element defines text with strong importance. The content inside is typically displayed in bold.</p>
+<p>The HTML "strong" element defines text with strong importance. The content inside is typically displayed in bold.</p>
 	<strong>This text is important!</strong>
-	
-<h1>HTML &lt;i&gt; and &lt;em&gt; Elements</h1>
+	<br><br>
+		
+<h2>HTML &lt;i&gt; and &lt;em&gt; Elements</h2>
 	<p>The HTML "i" element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
 		<br>Tip: The "i" tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</p>
 	<i>This text is italic</i>
 	<br>
-	<p>The HTML "em" element defines emphasized text. The content inside is typically displayed in italic.
+<p>The HTML "em" element defines emphasized text. The content inside is typically displayed in italic.
 		<br>
 		Tip: A screen reader will pronounce the words in "em" with an emphasis, using verbal stress.</p>
 	<em>This text is emphasized</em>
-	
-<h1>HTML &lt;small&gt; Element</h1>
-	<p>The HTML "small" element defines smaller text:</p>
-	<small>This is some smaller text.</small>
-	
-<h1>HTML &lt;mark&gt; Element</h1>
+	<br>
+	<br>
+<br>
+		
+<h2>HTML &lt;small&gt; Element</h2>
+	<p>The HTML "small" element defines smaller text:<br>
+	  <small>This is some smaller text.</small></p>
+	<br>
+		
+<h2>HTML &lt;mark&gt; Element</h2>
 	<p>The HTML "mark" element defines text that should be marked or highlighted:</p>
 	<p>Do not forget to buy <mark>milk</mark> today.</p>
-	
-<h1>HTML &lt;del&gt; Element</h1>
+	<br>
+		
+<h2>HTML &lt;del&gt; Element</h2>
 	<p>The HTML "del" element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:</p>
 	<p>My favorite color is <del>blue</del> red.</p>
-	
-<h1>HTML &lt;ins&gt; Element</h1>
+	<br>
+		
+<h2>HTML &lt;ins&gt; Element</h2>
 	<p>The HTML "ins" element defines a text that has been inserted into a document. Browsers will usually underline inserted text:</p>
 	<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
-	
-<h1>HTML &lt;sub&gt; Element</h1>
+	<br>
+		
+<h2>HTML &lt;sub&gt; Element</h2>
 	<p>The HTML "sub" element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:</p>
 	<p>This is <sub>subscripted</sub> text.</p>
-	
-<h1>HTML &lt;sup&gt; Element</h1>
+	<br>
+		
+<h2>HTML &lt;sup&gt; Element</h2>
 	<p>The HTML "sup" element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:</p>
 	<p>This is <sup>superscripted</sup> text.</p>
-	
-<h1>HTML Text Formatting Elements</h1>
+	<br>
+		
+<h2>HTML Text Formatting Elements</h2>
 	<pre>
 TAG		DESCRIPTION
 • &lt;b&gt;		Defines bold text
@@ -348,11 +412,11 @@ TAG		DESCRIPTION
 • &lt;sup&gt;		Defines superscripted text
 • &lt;ins&gt;		Defines inserted text
 • &lt;del&gt;		Defines deleted text
-• &lt;mark&gt;	Defines marked/highlighted text</pre>
+• &lt;mark&gt;	Defines marked/highlighted text</pre><br>
 	<hr>
 	<hr>
 	
-<h1>HTML Quotation and Citation Elements</h1>
+<h1 style="color:teal;">HTML Quotation and Citation Elements</h1>
 	<p>In this chapter we will go through the  &lt;blockquote&gt;, &lt;q&gt;,  &lt;abbr&gt;,  &lt;address&gt;,  &lt;cite&gt;, and  &lt;bdo&gt; HTML elements.</p>
 	<p>Here is a quote from WWF's website:</p>
 
@@ -360,7 +424,8 @@ TAG		DESCRIPTION
 	For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
 	</blockquote>
 	
-<h1>HTML &lt;blockquote&gt; for Quotations</h1>
+<h2><br>
+HTML &lt;blockquote&gt; for Quotations</h2>
 	<p>The HTML &lt;blockquote&gt; element defines a section that is quoted from another source.
 		<br>Browsers usually indent &lt;blockquote&gt; elements.</p>
 	<p>Here is a quote from WWF's website:</p>
@@ -368,18 +433,21 @@ TAG		DESCRIPTION
 	For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
 	</blockquote>
 	
-<h1>HTML &lt;q&gt; for Short Quotations</h1>
+<h2><br>
+HTML &lt;q&gt; for Short Quotations</h2>
 	<p>The HTML &lt;q&gt; tag defines a short quotation.
 		<br>Browsers normally insert quotation marks around the quotation.</p>
 	<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
 	
-<h1>HTML &lt;abbr&gt; for Abbreviations</h1>
+<h2><br>
+HTML &lt;abbr&gt; for Abbreviations</h2>
 	<p>The HTML &lt;abbr&gt; tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
 		<br>Marking abbreviations can give useful information to browsers, translation systems, and search-engines.
 		<br>Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. </p>
 	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 	
-<h1>HTML &lt;address&gt; for Contact Information</h1>
+<h2><br>
+HTML &lt;address&gt; for Contact Information</h2>
 	<p>The HTML &lt;address&gt; tag defines the contact information for the author/owner of a document or an article.
 	<br>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.<br>
 	<br>The text in the &lt;address&gt; element usually renders in italic, and browsers will always add a line break before and after the &lt;address&gt; element.</p>
@@ -392,18 +460,21 @@ TAG		DESCRIPTION
 	</address>
 	<br>
 	
-<h1>HTML &lt;cite&gt; for Work Title</h1>
+<h2><br>
+HTML &lt;cite&gt; for Work Title</h2>
 	<p>The HTML &lt;cite&gt; tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
 		<br>Note: A person's name is not the title of a work.
 		<br>The text in the &lt;cite&gt; element usually renders in italic.</p>
 	<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 	
-<h1>HTML &lt;bdo&gt; for Bi-Directional Override</h1>
+<h2><br>
+HTML &lt;bdo&gt; for Bi-Directional Override</h2>
 	<p>BDO stands for Bi-Directional Override.
 		<br>The HTML &lt;bdo&gt; tag is used to override the current text direction:</p>
 	<bdo dir="rtl">This text will be written from right to left</bdo>
 
-<h1>HTML Quotation and Citation Elements</h1>
+<h2><br>
+HTML Quotation and Citation Elements</h2>
 	<pre>
 	TAG		DESCRIPTION
 	• &lt;abbr&gt;	Defines an abbreviation or acronym
@@ -413,19 +484,22 @@ TAG		DESCRIPTION
 	• &lt;cite&gt;	Defines the title of a work
 	• &lt;q&gt;		Defines a short inline quotation
 </pre>	
+	<br>
 	<hr>
 	<hr>
 	
-<h1>HTML Comments</h1>
+<h1 style="color:teal;">HTML Comments</h1>
 	<p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
 	
-<h1>HTML Comment Tag</h1>
+<h2><br>
+HTML Comment Tag</h2>
 	<p>You can add comments to your HTML source by using the following syntax:<br>
 	&lt;!-- Write your comments here --&gt;<br>
 	Notice that there is an exclamation point (!) in the start tag, but not in the end tag.<br>
 	Note: Comments are not displayed by the browser, but they can help document your HTML source code.</p>
 	
-<h1>Add Comments</h1>
+<h2><br>
+Add Comments</h2>
 	<p>With comments you can place notifications and reminders in your HTML code:</p>
 	<!-- This is a comment -->
 
@@ -433,7 +507,8 @@ TAG		DESCRIPTION
 
 	<!-- Remember to add more information here -->
 	
-<h1>Hide Content</h1>
+<h2><br>
+Hide Content</h2>
 	<p>Comments can be used to hide content.<br>
 		This can be helpful if you hide content temporarily:</p>
 	<p>This is a paragraph.</p>
@@ -449,10 +524,311 @@ TAG		DESCRIPTION
 	-->
 	<p>This is a paragraph too.</p>
 	
-<h1>Hide Inline Content</h1>
+<h2><br>
+Hide Inline Content</h2>
 	<p>Comments can be used to hide parts in the middle of the HTML code.</p>
-	<p>This <!-- great text --> is a paragraph.</p>
+	<p>This <!-- great text --> is a paragraph.<br>
+	  <br>
+	  <br>
+	</p>
+	<hr><hr>
+	<br>
+		
+
+<h1 style="color:teal;">HTML Colors</h1>
+		<p>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+		<br>
+		
+		<h2>Color Names</h2>
+		<p>In HTML, a color can be specified by using a color name like tomato, orange, dodgerblue, meadiumseagreen, etc.</p>
+		<br>
+		
+		<h2>Background COlor</h2>
+		<p>You can set the background color for HTML elements</p>
+		<p>Example:</p>
+		<h3 style="background-color:DodgerBlue;">Hello World</h3>
+		<p style="background-color:Tomato;">Lorem ipsum...</p>
+		<br>
+		
+		<h2>Text Color</h2>
+		<p>You can set the color of text.</p>
+		<p>Example:</p>
+		<h3 style="color:Tomato;">Hello World</h3>
+	<p style="color:DodgerBlue;">Lorem ipsum...</p>
+	<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+		<br>
+		
+		<h2>Border Color</h2>
+		<p>You can set the color of borders.</p>
+		<p>Example:</p>
+		<h1 style="border:2px solid Tomato;">Hello World</h1>
+		<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+		<h1 style="border:2px solid Violet;">Hello World</h1>
+		<br>
+		
+		<h2>Color Values</h2>
+<p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.</p>
+<p>The following three &lt;div&gt; elements have their background color set with RGB, HEX, and HSL values:</p>
+		<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+		<h1 style="background-color:#ff6347;">#ff6347</h1>
+		<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+		<br>
+		
+		<p>The following two &lt;div&gt; elements have their background color set with RGBA and HSLA values, which add an Alpha channel to the color (here we have 50% transparency):</p>
+		<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+		<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+		<br>
+		
+<h1>HTML RGB and RGBA Colors</h1>
+		<p>An RGB color value represents RED, GREEN, and BLUE light sources.
+			<br>An RGBA color value is an extension of RGB with an Alpha channel (opacity).</p>
+		<p>Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.</p>
+		<br>
+		
+		<h2>RGB Color Values</h2>
+		<p>This means that there are 256 x 256 x 256 = 16777216 possible colors!</p>
+		<p>For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.</p>
+		<p>Another example, rgb(0, 255, 0) is displayed as green, because green is set to its highest value (255), and the other two (red and blue) are set to 0.</p>
+		<p>To display black, set all color parameters to 0, like this: rgb(0, 0, 0).</p>
+		<p>To display white, set all color parameters to 255, like this: rgb(255, 255, 255).</p>
+		<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+		<h1 style="background-color:rgb(0, 255, 0);">rgb(0, 255, 0)</h1>
+		<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+		<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+		<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+		<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+		<br>
+		
+		<h2>Shades of Gray</h2>
+		<p>Shades of gray are often defined using equal values for all three parameters:</p>
+		<h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+		<h1 style="background-color:rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+		<h1 style="background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+		<h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+		<h1 style="background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+		<h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+		<br>
+		
+		<h2>RGBA Color Values</h2>
+		<p>RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.
+		<p>An RGBA color value is specified with:</p>
+		<p>rgba(red, green, blue, alpha)</p>
+		<p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+		<br>
+		<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+		<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+		<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+		<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+		<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+		<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+		<br>
+		
+		<h1>HTML HEX Colors</h1>
+		<p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</p>
+		<br>
+		<h2>HEX Color Values</h2>
+		<p>In HTML, a color can be specified using a hexadecimal value in the form:
+		<p>#rrggbb</p>
+		<p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+		<p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00.</p>
+		<p>Another example, #00ff00 is displayed as green, because green is set to its highest value (ff), and the other two (red and blue) are set to 00.</p>
+		<p>To display black, set all color parameters to 00, like this: #000000.</p>
+		<p>To display white, set all color parameters to ff, like this: #ffffff.</p>
+		<br>
+		<h1 style="background-color:#ff0000;">#ff0000</h1>
+		<h1 style="background-color:#0000ff;">#0000ff</h1>
+		<h1 style="background-color:#3cb371;">#3cb371</h1>
+		<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+		<h1 style="background-color:#ffa500;">#ffa500</h1>
+		<h1 style="background-color:#6a5acd;">#6a5acd</h1>
+		<br>
+		
+		<h2>Shades of Gray</h2>
+		<p>Shades of gray are often defined using equal values for all three parameters:</p>
+		<h1 style="background-color:#404040;">#404040</h1>
+		<h1 style="background-color:#686868;">#686868</h1>
+		<h1 style="background-color:#a0a0a0;">#a0a0a0</h1>
+		<h1 style="background-color:#bebebe;">#bebebe</h1>
+		<h1 style="background-color:#dcdcdc;">#dcdcdc</h1>
+		<h1 style="background-color:#f8f8f8;">#f8f8f8</h1>
+		<br>
+		
+		<h1>HTML HSL and HSLA Colors</h1>
+		<p>HSL stands for hue, saturation, and lightness.</p>
+		<p>HSLA color values are an extension of HSL with an Alpha channel (opacity).</p>
+		<br>
+		
+		<h2>HSL Color Values</h2>
+		<p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p>
+		<p>hsl(hue, saturation, lightness)</p>
+		<p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+		<p>Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.</p>
+		<p>Lightness is also a percentage value. 0% is black, and 100% is white.</p>
+		<br>
+		
+		<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+		<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+		<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+		<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+		<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+		<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+		<br>
+		
+		<h2>Saturation</h2>
+		<p>Saturation can be described as the intensity of a color.</p>
+		<p>100% is pure color, no shades of gray.</p>
+		<p>50% is 50% gray, but you can still see the color.</p>
+		<p>0% is completely gray; you can no longer see the color.</p>
+		<br>
+		<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+		<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+		<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+		<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+		<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+		<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+
+		<p>With HSL colors, less saturation mean less color. 0% is completely gray.</p>
+		<br>
+		
+		<h2>Lightness</h2>
+		<p>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light), and 100% means full lightness (white).</p>
+		<h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+		<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+		<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+		<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+		<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+		<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+
+		<p>With HSL colors, 0% lightness means black, and 100 lightness means white.</p>
+		<br>
+		
+		<h2>Shades of Gray</h2>
+		<p>Shades of gray are often defined by setting the hue and saturation to 0, and adjusting the lightness from 0% to 100% to get darker/lighter shades:</p>
+		<h1 style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+		<h1 style="background-color:hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+		<h1 style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+		<h1 style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+		<h1 style="background-color:hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+		<h1 style="background-color:hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
+		<br>
+		
+		<h2>HSLA Color Values</h2>
+		<p>HSLA color values are an extension of HSL color values, with an Alpha channel - which specifies the opacity for a color.</p>
+		<p>An HSLA color value is specified with:</p>
+		<p>hsla(hue, saturation, lightness, alpha)</p>
+		<p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+		<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+		<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+		<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+		<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+		<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+		<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+		<br>
+		
+		<hr><hr>
+		
+		<h1 style="color:teal;">HTML Styles - CSS</h1>
+		<p>CSS stands for Cascading Style Sheets.</p>
+		<p>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+		<br>
+		
+		<h2>What is CSS?</h2>
+		<p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p>
+		<p>With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
+		<p>Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!</p>
+		<br>
+		
+		<h2>Using CSS</h2>
+		<p>CSS can be added to HTML documents in 3 ways:</p>
+		<ul>
+			<li>Inline - by using the style attribute inside HTML elements</li>
+			<li>Internal - by using a &lt;style&gt; element in the &lt;head&gt; section</li>
+			<li>External - by using a &lt;link&gt; element to link to an external CSS file</li>
+		</ul>
+		<p>The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.</p>
+		<br>
+		
+		<h2>Inline CSS</h2>
+		<p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+		<p>An inline CSS uses the style attribute of an HTML element.</p>
+		<p>The following example sets the text color of the &lt;h1&gt; element to blue, and the text color of the &lt;p&gt; element to red:</p>
+		<h1 style="color:blue;">A Blue Heading</h1>
+		<p style="color:red;">A red paragraph.</p>
+		<br>
+		
+		<h2>Internal CSS</h2>
+		<p>An internal CSS is used to define a style for a single HTML page.</p>
+		<p>An internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
+		<p>The following example sets the text color of ALL the &lt;h1&gt; elements (on that page) to blue, and the text color of ALL the &lt;p&gt; elements to red. In addition, the page will be displayed with a "powderblue" background color: </p>
+		<br>
+		<img src="images/internal-css.png" alt="screenshot of internal css code">
+		<br>
+		
+		<h2>External CSS</h2>
+		<p>An external style sheet is used to define the style for many HTML pages.</p>		
+		<p>To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page:</p>
+		<img src="images/external-css.png" alt="screeshot of external css code">
+		<p>The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</p>
+		<p>Here is what the "styles.css" file looks like:</p>
+		<br>
+		<img src="images/styles-css-code.png" alt="screenshot of css style code">
+		<br>
 	
+		<h2>CSS Colors, Fonts and Sizes</h2>
+		<p>Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.</p>
+		<p>The CSS color property defines the text color to be used.</p>
+		<p>The CSS font-family property defines the font to be used.</p>
+		<p>The CSS font-size property defines the text size to be used.</p>
+		<br>
+		<img src="images/css-color-fonts-sizes.png" alt="screenshot of css color, font family, and font size properties">
+		<br>
+	
+		<h2>CSS Border</h2>
+		<p>The CSS border property defines a border around an HTML element.</p>
+		<p>Tip: You can define a border for nearly all HTML elements.</p>
+		<img src="images/css-border.png" alt="screenshot of css border properties">
+		<br>
+	
+		<h2>CSS Padding</h2>	
+		<p>The CSS padding property defines a padding (space) between the text and the border.</p>
+		<img src="images/css-padding.png" alt="screenshot of css padding properties">
+		<br>
+		
+		<h2>CSS Margin</h2>
+		<p>The CSS margin property defines a margin (space) outside the border.</p>
+		<img src="images/css-margin.png" alt="screenshot of CSS margin properties">
+		<br>
+	
+		<h2>Link to External CSS</h2>
+		<p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+		<br>
+		<p>This example uses a full URL to link to a style sheet:</p>
+		<img src="images/external-css-url-link.png" alt="screenshot of external css code">
+		<br>
+	
+		<p>This example links to a style sheet located in the html folder on the current web site: </p>
+		<img src="images/externall-css-html-folder.png" alt="screenshot of external css code">
+		<br>
+	
+		<p>This example links to a style sheet located in the same folder as the current page:</p>
+		<img src="images/externall-css-same-folder.png" alt="screenshot of external css code">
+		<br>
+	
+		<h2>Chapter Summary</h2>
+		<ul>
+			<li>Use the HTML style attribute for inline styling</li>
+			<li>Use the HTML &lt;style&gt; element to define internal CSS</li>
+			<li>Use the HTML &lt;link&gt; element to refer to an external CSS file</li>
+			<li>Use the HTML &lt;head&gt; element to store &lt;style&gt; and &lt;link&gt; elements</li>
+			<li>Use the CSS color property for text colors</li>
+			<li>Use the CSS font-family property for text fonts</li>
+			<li>Use the CSS font-size property for text sizes</li>
+			<li>Use the CSS border property for borders</li>
+			<li>Use the CSS padding property for space inside the border</li>
+			<li>Use the CSS margin property for space outside the border</li>
+		</ul>
+		
+		
 	
 </body>
 </html>
